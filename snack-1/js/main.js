@@ -20,89 +20,87 @@ percentuale di successo per i tiri da 3 punti superiore all’80%.
 
 const players = [
     {
-        code: '1234',
+        code: `${makeLetter(3)}${randomNum(999)}`,
         firstName: 'Michael',
         lastName: 'Jordan',
         age: '28',
-        pointsAverage: '30',
-        percShots: '90%'
+        pointsAverage: `${randomNum(50)}`,
+        percThreeShots: `${randomNum(100)}%`,
     },
     {
-        code: '1234',
+        code: `${makeLetter(3)}${randomNum(999)}`,
         firstName: 'Larry',
         lastName: 'Bird',
         age: '30',
-        pointsAverage: '30',
-        percShots: '90%'
+        pointsAverage: `${randomNum(50)}`,
+        percThreeShots: `${randomNum(100)}%`,
     },
     {
-        code: '1234',
+        code: `${makeLetter(3)}${randomNum(999)}`,
         firstName: 'Magic',
         lastName: 'Johnson',
         age: '32',
-        pointsAverage: '30',
-        percShots: '90%'
+        pointsAverage: `${randomNum(50)}`,
+        percThreeShots: `${randomNum(100)}%`,
     },
     {
-        code: '1234',
+        code: `${makeLetter(3)}${randomNum(999)}`,
         firstName: 'Charles',
         lastName: 'Barkley',
         age: '26',
-        pointsAverage: '30',
-        percShots: '90%'
+        pointsAverage: `${randomNum(50)}`,
+        percThreeShots: `${randomNum(100)}%`,
     },
     {
-        code: '1234',
+        code: `${makeLetter(3)}${randomNum(999)}`,
         firstName: 'Kobe',
         lastName: 'Bryant',
         age: '22',
-        pointsAverage: '30',
-        percShots: '90%'
+        pointsAverage: `${randomNum(50)}`,
+        percThreeShots: `${randomNum(100)}%`,
     },
     {
-        code: '1234',
+        code: `${makeLetter(3)}${randomNum(999)}`,
         firstName: 'Isaiah',
         lastName: 'Thomas',
         age: '33',
-        pointsAverage: '30',
-        percShots: '90%'
+        pointsAverage: `${randomNum(50)}`,
+        percThreeShots: `${randomNum(100)}%`,
     },
     {
-        code: '1234',
+        code: `${makeLetter(3)}${randomNum(999)}`,
         firstName: 'Allen',
         lastName: 'Iverson',
         age: '24',
-        pointsAverage: '30',
-        percShots: '90%'
+        pointsAverage: `${randomNum(50)}`,
+        percThreeShots: `${randomNum(100)}%`,
     },
     {
-        code: '1234',
+        code: `${makeLetter(3)}${randomNum(999)}`,
         firstName: 'Vince',
         lastName: 'Carter',
         age: '25',
-        pointsAverage: '30',
-        percShots: '90%'
+        pointsAverage: `${randomNum(50)}`,
+        percThreeShots: `${randomNum(100)}%`,
     },
     {
-        code: '1234',
+        code: `${makeLetter(3)}${randomNum(999)}`,
         firstName: 'Tim',
         lastName: 'Duncan',
         age: '21',
-        pointsAverage: '30',
-        percShots: '90%'
+        pointsAverage: `${randomNum(50)}`,
+        percThreeShots: `${randomNum(100)}%`,
     },
     {
-        code: '1234',
+        code: `${makeLetter(3)}${randomNum(999)}`,
         firstName: 'Kevin',
         lastName: 'Garnett',
         age: '20',
-        pointsAverage: '30',
-        percShots: '90%'
+        pointsAverage: `${randomNum(50)}`,
+        percThreeShots: `${randomNum(100)}%`,
     },
 ]
 
-
-console.table(players);
 
 
 
@@ -125,7 +123,7 @@ function randomNum(num) {
     return genNum
 }
 
-console.log(randomNum(10));
+console.log(randomNum(999));
 
 //generiamo le 3 lettere per il codice giocatore
 function makeLetter(length) {
