@@ -25,7 +25,7 @@ const players = [
         lastName: 'Jordan',
         age: '28',
         pointsAverage: `${randomNum(50)}`,
-        percThreeShots: `${randomNum(100)}%`,
+        percThreeShots: `${randomNum(100)}`,
     },
     {
         code: `${makeLetter(3)}${randomNum(999)}`,
@@ -33,7 +33,7 @@ const players = [
         lastName: 'Bird',
         age: '30',
         pointsAverage: `${randomNum(50)}`,
-        percThreeShots: `${randomNum(100)}%`,
+        percThreeShots: `${randomNum(100)}`,
     },
     {
         code: `${makeLetter(3)}${randomNum(999)}`,
@@ -41,7 +41,7 @@ const players = [
         lastName: 'Johnson',
         age: '32',
         pointsAverage: `${randomNum(50)}`,
-        percThreeShots: `${randomNum(100)}%`,
+        percThreeShots: `${randomNum(100)}`,
     },
     {
         code: `${makeLetter(3)}${randomNum(999)}`,
@@ -49,7 +49,7 @@ const players = [
         lastName: 'Barkley',
         age: '26',
         pointsAverage: `${randomNum(50)}`,
-        percThreeShots: `${randomNum(100)}%`,
+        percThreeShots: `${randomNum(100)}`,
     },
     {
         code: `${makeLetter(3)}${randomNum(999)}`,
@@ -57,7 +57,7 @@ const players = [
         lastName: 'Bryant',
         age: '22',
         pointsAverage: `${randomNum(50)}`,
-        percThreeShots: `${randomNum(100)}%`,
+        percThreeShots: `${randomNum(100)}`,
     },
     {
         code: `${makeLetter(3)}${randomNum(999)}`,
@@ -65,7 +65,7 @@ const players = [
         lastName: 'Thomas',
         age: '33',
         pointsAverage: `${randomNum(50)}`,
-        percThreeShots: `${randomNum(100)}%`,
+        percThreeShots: `${randomNum(100)}`,
     },
     {
         code: `${makeLetter(3)}${randomNum(999)}`,
@@ -73,7 +73,7 @@ const players = [
         lastName: 'Iverson',
         age: '24',
         pointsAverage: `${randomNum(50)}`,
-        percThreeShots: `${randomNum(100)}%`,
+        percThreeShots: `${randomNum(100)}`,
     },
     {
         code: `${makeLetter(3)}${randomNum(999)}`,
@@ -81,7 +81,7 @@ const players = [
         lastName: 'Carter',
         age: '25',
         pointsAverage: `${randomNum(50)}`,
-        percThreeShots: `${randomNum(100)}%`,
+        percThreeShots: `${randomNum(100)}`,
     },
     {
         code: `${makeLetter(3)}${randomNum(999)}`,
@@ -89,7 +89,7 @@ const players = [
         lastName: 'Duncan',
         age: '21',
         pointsAverage: `${randomNum(50)}`,
-        percThreeShots: `${randomNum(100)}%`,
+        percThreeShots: `${randomNum(100)}`,
     },
     {
         code: `${makeLetter(3)}${randomNum(999)}`,
@@ -97,7 +97,7 @@ const players = [
         lastName: 'Garnett',
         age: '20',
         pointsAverage: `${randomNum(50)}`,
-        percThreeShots: `${randomNum(100)}%`,
+        percThreeShots: `${randomNum(100)}`,
     },
 ]
 
@@ -113,7 +113,18 @@ for (let i = 0; i < players.length; i++) {
 }
 
 
+//array miglior giocatori
+const mvpPlayer = [];
 
+for (let i = 0; i < players.length; i++) {
+
+    if ((players[i].pointsAverage >= 35) && (players[i].percThreeShots > 80)) {
+        mvpPlayer.push(players[i]);
+    }
+}
+
+console.table(players)
+console.table(mvpPlayer);
 
 
 
@@ -132,7 +143,7 @@ function randomNum(num) {
     return genNum
 }
 
-console.log(randomNum(999));
+
 
 //generiamo le 3 lettere per il codice giocatore
 function makeLetter(length) {
@@ -148,5 +159,5 @@ function makeLetter(length) {
     return result
 }
 
-console.log(makeLetter(3));
+
 
