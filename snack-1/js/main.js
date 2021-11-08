@@ -45,3 +45,20 @@ function randomNum(num) {
 }
 
 
+//generiamo le 3 lettere per il codice giocatore
+function makeLetter(length) {
+    let result = '';
+    const letters = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'];
+
+    for (let i = 0; i < length; i++) {
+        result += letters[Math.floor( Math.random() * 21 )]
+       
+        
+
+    }
+    return result
+}
+
+console.log(makeLetter(3));
+
+
