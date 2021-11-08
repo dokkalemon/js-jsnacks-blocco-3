@@ -102,6 +102,15 @@ const players = [
 ]
 
 
+//Stampiamo solo nome cognome età e codice
+for (let i = 0; i < players.length; i++) {
+    console.log(
+        players[i].firstName,
+        players[i].lastName,
+        players[i].age,
+        players[i].code,
+    );
+}
 
 
 
