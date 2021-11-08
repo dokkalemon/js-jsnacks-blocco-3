@@ -18,10 +18,91 @@ e 3 cifre casuali
 percentuale di successo per i tiri da 3 punti superiore all’80%.
 */
 
+const players = [
+    {
+        code: '1234',
+        firstName: 'Michael',
+        lastName: 'Jordan',
+        age: '28',
+        pointsAverage: '30',
+        percShots: '90%'
+    },
+    {
+        code: '1234',
+        firstName: 'Larry',
+        lastName: 'Bird',
+        age: '30',
+        pointsAverage: '30',
+        percShots: '90%'
+    },
+    {
+        code: '1234',
+        firstName: 'Magic',
+        lastName: 'Johnson',
+        age: '32',
+        pointsAverage: '30',
+        percShots: '90%'
+    },
+    {
+        code: '1234',
+        firstName: 'Charles',
+        lastName: 'Barkley',
+        age: '26',
+        pointsAverage: '30',
+        percShots: '90%'
+    },
+    {
+        code: '1234',
+        firstName: 'Kobe',
+        lastName: 'Bryant',
+        age: '22',
+        pointsAverage: '30',
+        percShots: '90%'
+    },
+    {
+        code: '1234',
+        firstName: 'Isaiah',
+        lastName: 'Thomas',
+        age: '33',
+        pointsAverage: '30',
+        percShots: '90%'
+    },
+    {
+        code: '1234',
+        firstName: 'Allen',
+        lastName: 'Iverson',
+        age: '24',
+        pointsAverage: '30',
+        percShots: '90%'
+    },
+    {
+        code: '1234',
+        firstName: 'Vince',
+        lastName: 'Carter',
+        age: '25',
+        pointsAverage: '30',
+        percShots: '90%'
+    },
+    {
+        code: '1234',
+        firstName: 'Tim',
+        lastName: 'Duncan',
+        age: '21',
+        pointsAverage: '30',
+        percShots: '90%'
+    },
+    {
+        code: '1234',
+        firstName: 'Kevin',
+        lastName: 'Garnett',
+        age: '20',
+        pointsAverage: '30',
+        percShots: '90%'
+    },
+]
 
 
-
-
+console.table(players);
 
 
 
@@ -44,6 +125,7 @@ function randomNum(num) {
     return genNum
 }
 
+console.log(randomNum(10));
 
 //generiamo le 3 lettere per il codice giocatore
 function makeLetter(length) {
@@ -60,5 +142,4 @@ function makeLetter(length) {
 }
 
 console.log(makeLetter(3));
-
 
